@@ -1,0 +1,17 @@
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Listing
+alias ll='ls -lah --color=auto'
+alias la='ls -A --color=auto'
+
+# Safety
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Git
+alias gs='git status'
+alias gd='git diff'
+alias gl='git log --oneline --graph'
