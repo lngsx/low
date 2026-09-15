@@ -1,6 +1,10 @@
 " Drop legacy vi compatibility (this is the most important one)
 set nocompatible
 
+" Leader key: <Space> instead of the default backslash
+" (must be set before plugins load and before any <leader> mappings)
+let mapleader = "\<Space>"
+
 " Plugins (vim-plug)
 call plug#begin()
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
