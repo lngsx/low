@@ -1,6 +1,15 @@
 " Drop legacy vi compatibility (this is the most important one)
 set nocompatible
 
+" Plugins (vim-plug)
+call plug#begin()
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+call plug#end()
+
+" fzf: fuzzy file finder
+nnoremap <C-p> :Files<CR>
+
 " Enable syntax highlighting
 syntax on
 
