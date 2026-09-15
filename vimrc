@@ -5,6 +5,7 @@ set nocompatible
 call plug#begin()
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'ap/vim-buftabline'
 call plug#end()
 
 " fzf: fuzzy file finder
@@ -48,3 +49,10 @@ set expandtab
 let &t_SI = "\e[5 q"   " Insert mode — beam cursor
 let &t_SR = "\e[3 q"   " Replace mode — underline cursor
 let &t_EI = "\e[2 q"   " Normal mode — block cursor
+
+" Buffer navigation
+nnoremap q :bnext<CR>
+nnoremap <S-l> :bnext<CR>
+nnoremap <S-h> :bprevious<CR>
+nnoremap <leader>w :bdelete<CR>
+nnoremap <C-e> :Buffers<CR>
