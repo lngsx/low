@@ -60,3 +60,17 @@ nnoremap <S-l> :bnext<CR>
 nnoremap <S-h> :bprevious<CR>
 nnoremap <leader>w :bdelete<CR>
 nnoremap <C-e> :Buffers<CR>
+
+" Buftabline: swap active/inactive highlight
+"
+" Default was PmenuSel — color 7 from terminal, warm white.
+" Didn't like the fancy terminal look personally. Wanted opposite.
+" Reset to Normal (dark) and swapped active tab to PmenuSel.
+"
+" Their default; just repeat it for clarity.
+highlight link BufTabLineCurrent PmenuSel 
+highlight link BufTabLineActive  PmenuSel
+
+" Reset the color.
+highlight link BufTabLineHidden  Normal
+highlight link BufTabLineFill    Normal
