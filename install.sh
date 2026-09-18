@@ -4,8 +4,9 @@ set -euo pipefail
 RAW_BASE_URL="https://raw.githubusercontent.com/lngsx/low/main"
 
 # download dotfiles to $HOME
-curl -fsSL "$RAW_BASE_URL/vimrc"   -o "$HOME/.vimrc"
-curl -fsSL "$RAW_BASE_URL/aliases" -o "$HOME/.bash_aliases"
+curl -fsSL "$RAW_BASE_URL/vimrc"     -o "$HOME/.vimrc"
+curl -fsSL "$RAW_BASE_URL/aliases"   -o "$HOME/.bash_aliases"
+curl -fsSL "$RAW_BASE_URL/tmux.conf" -o "$HOME/.tmux.conf"
 
 # install vim-plug plugin manager (single file, required for the plugins in ~/.vimrc)
 curl -fLo "$HOME/.vim/autoload/plug.vim" --create-dirs \

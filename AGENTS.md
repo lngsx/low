@@ -6,18 +6,19 @@
 
 These VMs are serving actual workloads. The editor must not compete for resources. Any plugin, dependency, or feature that adds CPU, memory, or disk overhead gets cut — no matter how convenient. When in doubt, leave it out.
 
-The entire project is just four files:
+The entire project is just five files:
 
 | File | Purpose |
 |------|---------|
 | `vimrc` | Minimal Vim config with vim-plug, fzf, and sane defaults |
+| `tmux.conf` | Minimal tmux config with Vim-aware pane switching (`C-h/j/k/l`) |
 | `aliases` | A few bash shortcuts (`..`, `...`, `qa`) |
 | `install.sh` | One-liner to deploy dotfiles onto a remote VM |
 | `README.md` | Usage instructions |
 
 ## Rules
 
-1. **Everything you need is in this repo.** Do not explore the local machine's Vim, NeoVim, bash config, or any other system configuration. The only config that matters is the file named `vimrc` in this directory.
+1. **Everything you need is in this repo.** Do not explore the local machine's Vim, NeoVim, tmux, bash config, or any other system configuration. The only config files that matter are the ones in this directory.
 
 2. **Keep it minimal.** Every addition must justify itself for a remote editing session. If it costs resources or adds dependencies, push back first — explain the tradeoff clearly. If the user still wants it, that's their call.
 

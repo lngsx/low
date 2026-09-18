@@ -10,6 +10,7 @@ call plug#begin()
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'ap/vim-buftabline'
+  Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " fzf: fuzzy file finder
