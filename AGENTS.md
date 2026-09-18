@@ -11,7 +11,7 @@ The entire project is just five files:
 | File | Purpose |
 |------|---------|
 | `vimrc` | Minimal Vim config with vim-plug, fzf, and sane defaults |
-| `tmux.conf` | Minimal tmux config with Vim-aware pane switching (`C-h/j/k/l`) |
+| `tmux.conf` | Minimal tmux config with TPM-managed plugins |
 | `aliases` | A few bash shortcuts (`..`, `...`, `qa`) |
 | `install.sh` | One-liner to deploy dotfiles onto a remote VM |
 | `README.md` | Usage instructions |

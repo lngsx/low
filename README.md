@@ -10,10 +10,13 @@ curl -fsSL https://raw.githubusercontent.com/lngsx/low/main/install.sh | bash
 
 Re-running the same command updates the dotfiles to the latest from this repo.
 
-## Plugins
+## Managing plugins
 
-Plugins are managed with [vim-plug](https://github.com/junegunn/vim-plug). After install, open Vim and run:
-
-```vim
+```
+# Vim — install plugins (vim-plug)
 :PlugInstall
+
+# tmux — install and update (TPM)
+prefix + I
+prefix + U
 ```
