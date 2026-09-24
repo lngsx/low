@@ -2,3 +2,6 @@
 alias qa='exit'
 alias ..='cd ..'
 alias ...='cd ../..'
+
+# Clipboard
+alias clip='tmux load-buffer -w -'
